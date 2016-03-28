@@ -5,9 +5,9 @@ import UIKit
 // 控制流
 
 /*
-    Swift 提供了类似 C 语言的流程控制结构,包括可以多次执行任务的 for 和 while 循环,基于特定条件选择执行不同代码分支的 if 、 guard 和 switch 语句,还有控制流程跳转到其他代码的 break 和 continue 语句。
+    Swift 提供了类似 C 语言的流程控制结构,包括可以多次执行任务的while 循环,基于特定条件选择执行不同代码分支的 if 、 guard 和 switch 语句,还有控制流程跳转到其他代码的 break 和 continue 语句。
  
-    除了 C 语言里面传统的 for 循环,Swift 还增加了 for-in 循环,用来更简单地遍历数组(array),字典(dic tionary),区间(range),字符串(string)和其他序列类型。
+    Swift 还增加了 for-in 循环,用来更简单地遍历数组(array),字典(dic tionary),区间(range),字符串(string)和其他序列类型。
  
     Swift 的 switch 语句比 C 语言中更加强大。
     在 C 语言中,如果某个 case 不小心漏写了 break ,这个 case 就 会贯穿至下一个 case,Swift 无需写 break ,所以不会发生这种贯穿的情况。
@@ -18,17 +18,11 @@ import UIKit
 
 
 
-// >>  for 循环
-/*
- for 有两种形式：
- • for-in循环对一个集合里面的每个元素执行一系列语句。(类似OC中的快速枚举)
- • for 循环,用来重复执行一系列语句直到达成特定条件达成,一般通过在每次循环完成后增加计数器的值来 实现。
- */
 
 
+// >> for- in 循环
+//  • for-in循环对一个集合里面的每个元素执行一系列语句。(类似OC中的快速枚举)
 
-
-// for- in
 
 let stringsArray = ["0", "1", "2", "3", "4"]
 for item in stringsArray {
@@ -43,13 +37,6 @@ for _ in 0...5
 }
 two
 // 关于 for-in 可以看看之前的 Collection Types章节
-
-
-
-//  for 基本和其他语言类似
-for var index = 0; index < 4; ++index {
-    print("index = \(index)")
-}
 
 
 
